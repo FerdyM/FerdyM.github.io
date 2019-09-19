@@ -1,0 +1,230 @@
+.scale-in-top {
+  -webkit-animation: scale-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: scale-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.scale-out-top {
+  -webkit-animation: scale-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+          animation: scale-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes scale-out-top {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-out-top {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scale-in-top {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-top {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+}
+
+.container nav {
+  width: 100%;
+  height: 50px;
+  background: #008EFA;
+}
+
+.container nav ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.container nav .top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container nav .top-nav li {
+  margin: 0 5px;
+}
+
+.container nav .top-nav li a img {
+  width: 40px;
+  padding-top: 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container nav .top-nav li a img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.container nav .top-nav li #menu-logo {
+  width: 40px;
+}
+
+.container nav .top-nav #menu {
+  position: relative;
+  margin-left: auto;
+}
+
+.container .main {
+  height: calc(100vh - 50px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 2fr;
+      grid-template-rows: 1fr 1fr 2fr;
+}
+
+.container .main #heading {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  text-align: center;
+  color: white;
+}
+
+.container .main #heading #name {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.container .main #heading #under-name {
+  position: relative;
+  bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.container .main #main-button {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  height: 60px;
+  width: 150px;
+  border-radius: 50px;
+  background: white;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: relative;
+  margin: 0 auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+}
+
+.not-drop {
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+}
+
+.drop-down {
+  position: absolute;
+  z-index: 4;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+  background: #008EFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.drop-down li a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: black;
+}
+
+.drop-down li #about-me-link:hover, .drop-down li #about-me-link::after {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+/*# sourceMappingURL=homepage.css.map */
