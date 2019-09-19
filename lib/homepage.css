@@ -163,6 +163,17 @@ body {
   font-weight: 900;
 }
 
+.container .main #heading #f {
+  position: absolute;
+  z-index: 10;
+}
+
+.container .main #heading #f:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  background: red;
+}
+
 .container .main #heading #under-name {
   position: relative;
   bottom: 50px;
