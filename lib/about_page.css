@@ -140,21 +140,26 @@ body {
 
 .container .main {
   width: 100%;
+  font-size: 1.2rem;
 }
 
 .container .main #heading {
-  height: 100px;
-  width: 100%;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.container .main h1 {
+  margin: 20px 0;
 }
 
 .container .main #first {
   width: 100%;
   padding-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding-left: 10px;
 }
 
 .container .main #first #first-para {
@@ -162,8 +167,11 @@ body {
   padding-left: 10px;
 }
 
-.container .main #first #profile-photo img {
+.container .main #first #profile-photo {
   border-radius: 50%;
+  float: right;
+  height: 200px;
+  margin-right: 20px;
 }
 
 .container .main #second {
@@ -182,7 +190,6 @@ body {
       -ms-flex-order: 2;
           order: 2;
   padding-right: 10px;
-  text-align: right;
 }
 
 .not-drop {

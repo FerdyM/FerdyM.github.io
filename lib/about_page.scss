@@ -50,25 +50,32 @@ body {
         }
     }
     .main {
-        width: 100%;     
+        width: 100%; 
+        font-size: 1.2rem;   
         #heading {
-            height: 100px;
-            width: 100%;  
+            position: relative;
+            margin: 0;
+            text-align: center;
+            font-size: 3rem;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+        }
+        h1 {
+            margin: 20px 0;
         }
         #first {
             width: 100%;
             padding-bottom: 20px;
-            display: flex;
-            justify-content: space-around;
+            padding-left: 10px;
             #first-para {
                 margin: 0;
                 padding-left: 10px;
             }
             #profile-photo {
-                img {
-                    border-radius: 50%;
-                }
-                
+                border-radius: 50%;
+                float: right;
+                height: 200px; 
+                margin-right: 20px;             
             }
         }
         #second {
@@ -79,11 +86,16 @@ body {
                 margin: 0;
                 width: 50%;
                 order: 2;
-                padding-right: 10px;
-                text-align: right;
+                padding-left: 10px;
             }
             #photo-of-my-dog {
                
+            }
+        }
+        #third {
+            text-align: center;
+            #third-para {
+                
             }
         }
     }
