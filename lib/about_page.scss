@@ -1,4 +1,6 @@
 @import "animations";
+@import "nav";
+
 $lightblue: #008EFA;
 $darkblue: #00213B;
 $textblue: #0069BA;
@@ -21,6 +23,8 @@ body {
             margin: 0;
         }
         .top-nav {
+            position: relative;
+            z-index: 20;
             display: flex;
             height: 100%;
             width: 100%;
@@ -89,39 +93,18 @@ body {
                 padding-left: 10px;
             }
             #photo-of-my-dog {
-               
+               width: 200px;
             }
         }
-        #third {
-            text-align: center;
-            #third-para {
-                
+        #hobby1 {
+            border-top: 1px solid black;
+            p {
+                padding-left: 10px;
             }
-        }
-    }
-}
-.not-drop {
-    position: absolute;
-    opacity: 0;
-    bottom: 0;
-}
-.drop-down {
-    position: absolute;
-    z-index: 4;
-    top: 50px;
-    left: 0;
-    height: calc(100vh - 50px);
-    width: 100%;
-    background: $lightblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    li {
-        a {
-            text-decoration: none;
-            font-size: 3rem;
-            color: black;
+            img {
+                width: 200px;
+                float: right;
+            }
         }
     }
 }

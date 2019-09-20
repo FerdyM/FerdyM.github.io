@@ -1,24 +1,14 @@
-.scale-in-top {
-  -webkit-animation: scale-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: scale-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.scale-out-top {
-  -webkit-animation: scale-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-          animation: scale-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
 @-webkit-keyframes scale-out-top {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
     -webkit-transform-origin: 50% 0%;
             transform-origin: 50% 0%;
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
     -webkit-transform-origin: 50% 0%;
             transform-origin: 50% 0%;
     opacity: 1;
@@ -27,15 +17,15 @@
 
 @keyframes scale-out-top {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
     -webkit-transform-origin: 50% 0%;
             transform-origin: 50% 0%;
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
     -webkit-transform-origin: 50% 0%;
             transform-origin: 50% 0%;
     opacity: 1;
@@ -44,15 +34,15 @@
 
 @-webkit-keyframes scale-in-top {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
     -webkit-transform-origin: 50% 0%;
             transform-origin: 50% 0%;
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
     -webkit-transform-origin: 50% 0%;
             transform-origin: 50% 0%;
     opacity: 1;
@@ -61,19 +51,59 @@
 
 @keyframes scale-in-top {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
     -webkit-transform-origin: 50% 0%;
             transform-origin: 50% 0%;
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
     -webkit-transform-origin: 50% 0%;
             transform-origin: 50% 0%;
     opacity: 1;
   }
+}
+
+nav ul:nth-child(1) {
+  position: fixed;
+  z-index: 21;
+  top: 50px;
+  left: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  height: calc(100vh - 50px);
+  width: 100%;
+  background: #008EFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav ul:nth-child(1) li a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: black;
+}
+
+nav ul:nth-child(1).drop-down {
+  -webkit-animation: scale-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+          animation: scale-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+nav ul:nth-child(1).not-drop {
+  -webkit-animation: scale-out-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+          animation: scale-out-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 body {
@@ -100,6 +130,8 @@ body {
 }
 
 .container nav .top-nav {
+  position: relative;
+  z-index: 20;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,40 +221,23 @@ body {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  padding-right: 10px;
+  padding-left: 10px;
 }
 
-.not-drop {
-  position: absolute;
-  opacity: 0;
-  bottom: 0;
+.container .main #second #photo-of-my-dog {
+  width: 200px;
 }
 
-.drop-down {
-  position: absolute;
-  z-index: 4;
-  top: 50px;
-  left: 0;
-  height: calc(100vh - 50px);
-  width: 100%;
-  background: #008EFA;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.container .main #hobby1 {
+  border-top: 1px solid black;
 }
 
-.drop-down li a {
-  text-decoration: none;
-  font-size: 3rem;
-  color: black;
+.container .main #hobby1 p {
+  padding-left: 10px;
+}
+
+.container .main #hobby1 img {
+  width: 200px;
+  float: right;
 }
 /*# sourceMappingURL=about_page.css.map */

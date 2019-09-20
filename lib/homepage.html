@@ -7,11 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="homepage.css">
     <title>Ferdy Macleod</title>
+
+    <script src="nav.js" ></script>
 </head>
 <body>
     <section class="container">
         <nav>
-            <ul id="drop-nav" class="not-drop">
+            <ul id="drop-nav" class="">
                 <li><a href="homepage.html" id="home-link">Home</a></li>
                 <li><a href="about_page.html" id="about-me-link">About Me</a></li>
                 <li><a href="projects_page.html">Projects</a></li>
@@ -35,15 +37,4 @@
     </section>
     
 </body>
-<script>
-
-    let mainNav = document.getElementById('drop-nav');
-    let navBarToggle = document.getElementById('menu-logo');
-    
-    navBarToggle.addEventListener('click', function () {
-        mainNav.classList.toggle('not-drop');
-        mainNav.classList.toggle('scale-in-top');
-        mainNav.classList.toggle('drop-down');
-    });
-</script>
 </html>

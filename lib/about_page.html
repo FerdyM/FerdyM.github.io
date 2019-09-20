@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="about_page.css">
+    <script src="nav.js" ></script>
     <title>About Me</title>
 </head>
 <body>
@@ -30,35 +31,24 @@
                 <h1 id="title">My Story</h1>
             </div>
             <section id="first">
-                <img src="https://www.lorempixel.com/200/200" alt="Photo of me" id="profile-photo">
+                <img src="../images/profile-pic.jpg" alt="Photo of me" id="profile-photo">
                 <p id="first-para">I am currently a Full-Stack Devloper in the making at Coder Academy, I graduate in February 2020.<br><br> As soon as I began to understand the value and oppurtunites presented by the knowledge I was absorbing I become obsessed with programming. I felt like a kid again, all I think about before I sleep is coding and how excited I am for tommorow!</p>
             </section>
             <section id="second">
                 <p id="second-para">Now a little bit about myself!<br>I want to start with how I define myself, this is hard-working, open-minded but most importantly a life-long learner. I feel most satisfied spending my time making my brain hurt and learning, learning HARD!</p>
-                <img src="https://www.lorempixel.com/200/200" alt="Photo of my dog(german Shepard)" id="photo-of-my-dog">
+                <img src="../images/dog-pic.png" alt="Photo of my dog(german Shepard)" id="photo-of-my-dog">
             </section>
-            <section id="third">
-                <p id="third-para">I know what you're thinking, his guy's crazy! Well no, not quite; although I wish I could spend 100% of my time coding its not humanly possible so I have hese hings called hobby's to stop me going crazy!<br>Infact its my hobbies that originally led me to programming in the first place, this is because most of my hobbies include breaking things, fixing things or trying my best to understand things!</p>
-                <p>What are these hobbies I speak of? I have included them in order of priority.</p>
-                <ol>
-                    <li>My dog! This is my dog Jedi. She is walked a minimum of once per day and ideally twice per day. I really enjoy the training process as it forces me to get out of my normal thinking process.</li>
-                    <li>MMA/Muay Thai! I am extremely thankful for martial arts because I feel it has shaped my personality, it is through martial arts I learned to push myself and get comfortable with being uncomfortable!</li>
-                    <li>Projects! Although coding is definitely included in this its not limited to it. I really just enjoy making things, especially technical things, I especially like automating tasks and my house!</li>
-                    <li>Fitness! I read alot about health, and although I dont have as much time as I'd like to go to the gym anymore I still make sure I eat healthy and do plenty of cardio during the week. My personal health goal is to reach the age of 120.</li>
-                </ol>
+            <section id="hobbies">
+                    <p id="third-para">Despite the fact that I would if I could, I dont actually spend 100% of my time coding. Here's a few hoobbies.</p>
+                <div id="hobby1">       
+                    <img src="../images/doggo.png" alt="pic of my weird dog" id="pic-of-dog">
+                    <p>This is my dog Jedi! She likes to go for walks atleast once per day.</p>
+                </div>
+                <p>MMA/Muay Thai! Martial arts taught me to push myself and stick through!</p>
+                <p>Projects! Although coding is definitely included in this its not limited to it. I really just enjoy making things, especially technical things, I especially like automating tasks and my house!</p>
+                <p>Fitness! I read alot about health, and although I dont have as much time as I'd like to go to the gym anymore I still make sure I eat healthy and do plenty of cardio during the week. My personal health goal is to reach the age of 120.</p>
             </section>
         </section>
     </section>
 </body>
-<script>
-
-    let mainNav = document.getElementById('drop-nav');
-    let navBarToggle = document.getElementById('menu-logo');
-    
-    navBarToggle.addEventListener('click', function () {
-        mainNav.classList.toggle('not-drop');
-        mainNav.classList.toggle('scale-in-top');
-        mainNav.classList.toggle('drop-down');
-    });
-</script>
 </html>
