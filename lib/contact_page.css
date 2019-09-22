@@ -235,8 +235,8 @@ body {
   border-radius: 20px;
   border: 0;
   margin-bottom: 15px;
-  background: -webkit-gradient(linear, left top, right top, from(#5b32d0), to(#a732d0));
-  background: linear-gradient(90deg, #5b32d0 0%, #a732d0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#5b32d0), to(#000157));
+  background: linear-gradient(90deg, #5b32d0 0%, #000157 100%);
   font-size: 1.2rem;
   font-weight: bold;
   color: #FCFCF3;
