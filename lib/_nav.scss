@@ -8,7 +8,7 @@ nav {
         transform: scale(0);
         height: calc(100vh - 50px);
         width: 100%;
-        background: $lightblue;
+        background: linear-gradient(180deg, rgba(91,50,208,1) 0%, rgba(167,50,208,1) 100%);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,11 +23,11 @@ nav {
         }
 
         &.drop-down {
-            animation: scale-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+            animation: scale-in-tr 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
         }
 
         &.not-drop {
-            animation: scale-out-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+            animation: scale-out-tr 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
         }
     }
 }
