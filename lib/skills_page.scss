@@ -97,3 +97,18 @@ ul {
         }
     }
 }
+@media only screen and (min-width: 600px) {
+    .container {
+        .main {
+            h1 {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                top: 100px;
+            }
+            display: flex;
+            padding-top: 180px;
+            padding-bottom: 30px;
+        }
+    }
+}
