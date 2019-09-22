@@ -240,6 +240,13 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   color: #FCFCF3;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container .main .bubble-box button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .container .main #social-container {
@@ -284,7 +291,7 @@ body {
   background: #7D7D78;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 700px) {
   .container .main #heading {
     font-size: 5rem;
   }

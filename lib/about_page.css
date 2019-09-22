@@ -251,4 +251,20 @@ body {
   padding-left: 10px;
   padding-top: 20px;
 }
+
+@media only screen and (min-width: 800px) {
+  .container .main {
+    padding-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+  }
+  .container .main h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50px;
+  }
+}
 /*# sourceMappingURL=about_page.css.map */

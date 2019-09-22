@@ -91,6 +91,10 @@ body {
                 font-size: 1.2rem;
                 font-weight: bold;
                 color: #FCFCF3;
+                transition: 0.2s;
+            }
+            button:hover {
+                transform: scale(1.2);
             }
         }
         #social-container {
@@ -121,7 +125,7 @@ body {
         }
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 700px) {
     .container {
         .main {
             #heading {
