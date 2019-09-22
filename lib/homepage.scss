@@ -1,9 +1,8 @@
 @import "animations";
 @import "nav";
 
-$lightblue: #008EFA;
-$darkblue: #00213B;
-$textblue: #0069BA;
+$background: linear-gradient(180deg, rgba(91,50,208,1) 0%, rgba(167,50,208,1) 100%);
+$lightblue: rgba(91,50,208,1);
 body {
     margin: 0;
     font-family: 'Roboto', Arial;
@@ -12,8 +11,7 @@ body {
 .container {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/background.jpg);
-    background-size: cover;
+    background: $background;
     nav {
         width: 100%;
         height: 50px;
@@ -32,20 +30,9 @@ body {
             justify-content: start;
             align-items: center;
             li {
-                margin: 0 5px;
-                a {
-                    img {
-                        width: 40px;
-                        padding-top: 3px;
-                        transition: 0.2s;
-                    }
-                    img:hover {
-                        transform: scale(1.2);
-                    }
-                }
                 #menu-logo {
                     width: 40px;
-
+                    margin-right: 5px;
                 }
             }
             #menu {
@@ -68,14 +55,6 @@ body {
                 font-weight: 900;
                 
             }
-            #f {
-                position: absolute;
-                z-index: 10;
-            }
-            #f:hover {
-                transform: scale(2);
-                background: red;
-            }
             #under-name {
                 position: relative; 
                 bottom: 50px;
@@ -96,6 +75,11 @@ body {
             margin: 0 auto;
             align-self: center;
             border: none;
+            box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
+            transition: 0.2s;
+        }
+        #main-button:hover {
+            transform: scale(1.2);
         }
     }
 }
